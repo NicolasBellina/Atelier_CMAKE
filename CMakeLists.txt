@@ -8,3 +8,7 @@ add_test(t1 src/calculator add 2 3)
 add_test(t2 src/calculator sub 3 -2)
 add_test(t3 src/calculator mul 5 5)
 add_test(t4 src/calculator div 1 5)
+# test pour la nouvelle fonction car (carré)
+add_test(t5 src/calculator car 5)
+# matcher le début de la sortie par '25' pour accepter '25' ou '25.000000'
+set_tests_properties(t5 PROPERTIES PASS_REGULAR_EXPRESSION "^25")
