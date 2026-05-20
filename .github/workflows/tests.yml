@@ -8,7 +8,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Compilation
         run: |
-          mkdir -p build
+          # enlever tout ancien build (peut avoir été commité) pour éviter les erreurs CMakeCache
+          rm -rf build
+          mkdir build
           cd build
           cmake ..
           make
@@ -22,7 +24,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Test fonction add
         run: |
-          mkdir -p build
+          # enlever tout ancien build (peut avoir été commité)
+          rm -rf build
+          mkdir build
           cd build
           cmake ..
           make

@@ -1,0 +1,8 @@
+# Ignorer les dossiers de build locaux
+build/
+# Fichiers temporaires
+*.o
+*.obj
+*.exe
+.DS_Store
+
