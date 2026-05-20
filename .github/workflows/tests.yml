@@ -28,6 +28,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: build
       - name: Make executable
         run: |
           chmod +x ./build/src/calculator || true
@@ -43,6 +44,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: build
       - name: Make executable
         run: |
           chmod +x ./build/src/calculator || true
@@ -58,6 +60,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: build
       - name: Make executable
         run: |
           chmod +x ./build/src/calculator || true
@@ -73,6 +76,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build
+          path: build
       - name: Make executable
         run: |
           chmod +x ./build/src/calculator || true
